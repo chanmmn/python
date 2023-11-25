@@ -1,0 +1,11 @@
+
+
+{
+    "share_point": 
+        {
+            "user": "user",
+            "password": "password",
+            "url": "https://domain.sharepoint.com",
+            "site": "https://domain.sharepoint.com/DevSite/"
+        }
+}
