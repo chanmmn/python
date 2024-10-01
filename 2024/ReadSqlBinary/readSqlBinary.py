@@ -4,7 +4,7 @@ import pyodbc
 server = 'localhost'
 database = 'poc'
 username = 'sa'
-password = 'Pa$$w0rd'
+password = 'password'
 table_name = 'mysign'
 column_name = 'signed'
 image_path = 'image.png'
