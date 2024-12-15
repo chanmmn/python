@@ -2,7 +2,7 @@ import pymssql
 # Database connection parameters
 server = 'WIN-86UEG9VIS67'
 user = 'sa'
-password = 'Pa$$w0rd'
+password = 'password'
 database = 'Northwind'
 # Establish a connection to the database
 conn = pymssql.connect(server, user, password, database)
