@@ -53,25 +53,12 @@ cv_inner = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)  # smaller
 #grid = GridSearchCV(pipeline, param_grid, cv=cv_inner, scoring="f1_macro", n_jobs=-1)
 
 cv_outer = StratifiedKFold(n_splits=3, shuffle=True, random_state=1)
-# scores = cross_val_score(grid, X, y, cv=cv_outer, scoring="f1_macro")
 
-# print("Nested CV f1_macro: mean=%.3f std=%.3f" % (scores.mean(), scores.std()))
-
-# Individual F1 scores for each classifier using cross_val_score
 models = {
     "LogisticRegression": Pipeline([
         ("preproc", preprocessor),
         ("clf", LogisticRegression(max_iter=1000))
     ])
-    # ,
-    # "RandomForestClassifier": Pipeline([
-    #     ("preproc", preprocessor),
-    #     ("clf", RandomForestClassifier())
-    # ]),
-    # "SVC": Pipeline([
-    #     ("preproc", preprocessor),
-    #     ("clf", SVC(probability=True))
-    # ])
 }
 
 for name, model in models.items():
