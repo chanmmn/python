@@ -1,0 +1,23 @@
+-- public.customers definition
+
+-- Drop table
+
+-- DROP TABLE public.customers;
+
+CREATE TABLE public.customers (
+	customer_id serial4 NOT NULL,
+	first_name varchar(50) NOT NULL,
+	last_name varchar(50) NOT NULL,
+	email varchar(100) NOT NULL,
+	phone varchar(20) NULL,
+	address text NULL,
+	date_of_birth date NULL,
+	id_number varchar(50) NULL,
+	created_at timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	updated_at timestamp DEFAULT CURRENT_TIMESTAMP NULL,
+	is_active bool DEFAULT true NULL,
+	CONSTRAINT customers_email_key UNIQUE (email),
+	CONSTRAINT customers_id_number_key UNIQUE (id_number),
+	CONSTRAINT customers_pkey PRIMARY KEY (customer_id)
+);
+Write a Python Script to use SQLAlchemy to insert to the above PostgreSQL strcuture. The server is localhost, database name is mybank, the username is postgres, the password is Abcd1234.
