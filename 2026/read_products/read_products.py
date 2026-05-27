@@ -14,7 +14,7 @@ from sqlalchemy.orm import sessionmaker
 DB_HOST = "localhost"
 DB_NAME = "northwind"
 DB_USER = "postgres"
-DB_PASSWORD = "Abcd1234"
+DB_PASSWORD = "password"
 DB_PORT = 5432
 TABLE_NAME = "products"
 
