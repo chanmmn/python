@@ -32,7 +32,7 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=simpleclinic
 DB_USER=postgres
-DB_PASSWORD=Abcd1234
+DB_PASSWORD=password
 ```
 
 ## Run
