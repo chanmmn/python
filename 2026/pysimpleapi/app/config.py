@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     db_port: int = 5432
     db_name: str = "simpleclinic"
     db_user: str = "postgres"
-    db_password: str = "Abcd1234"
+    db_password: str = "password"
 
     @property
     def database_url(self) -> str:
